@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Comfortaa:wght@300;400;500;600;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/** Section Header*/
+header {
+    background: url('../imgs/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header button{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-family: 'Alfa Slab One', cursive;
+    margin-bottom: 60px;
+    background: #FF5733;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+header h2{
+    font-size: 4em;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/** Section Hero*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info img{
+    width: 70px;
+    border: none;
+    margin-right: 20px;
+}
+.info p{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.social-media a{
+    font-size: 1.3em; 
+    cursor: pointer;
+    margin-right: 10px;
+}
+.social-media i:nth-child(1){
+    color: #1773ea;
+}
+.social-media i:nth-child(2){ 
+    color: #1c96e8;
+}
+.social-media i:nth-child(3){
+    color: #0176b4;
+}
+
+
+/** Section Article*/
+.article {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 100px;  
+    font-family: 'Philosopher', sans-serif;
+    font-size: 20px;
+}
+.writer{
+    width: 20%;
+    height: 31vh;
+    padding: 20px 15px;
+    border: none;
+    background: #F2F4F4;
+}
+.writer p{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+.writer p sup:nth-child(1){
+    margin-right: 10px;
+}
+.writer p sup:nth-child(2){
+    margin-left: 15px;
+}
+.writer h4{
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FF5733;
+}
+.writer h4 span em{
+    font-weight: normal;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #000000;
+} 
+.writen{
+    width: 70%;
+}
+.writen p,
+.box-content p{
+    margin-bottom: 60px;
+    text-align: justify;
+    line-height: 30px;
+}
+.writen p:nth-child(1){
+    font-size: 18px;
+    font-weight: 700;
+}
+.writen p:nth-child(2),
+.box-content p{
+    text-indent: 40px;
+}
+.writen p:nth-child(2) span{
+    font-size: 4em;
+    font-weight: 700;
+}
+/** Section content*/
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 300px;
+    font-size: 18px;
+}
+.box-content h4 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FF5733;
+}
+.box-content h4 span{
+    padding: 5px 15px;
+    margin-right: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    background: #FF5733;
+    color: #F2F4F4;
+}
+
+.box-content p span{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.box-intervention {
+    padding: 30px;
+    background: #F2F4F4;
+    border: none;
+    margin-bottom: 30px;
+}
+.box-intervention p em i{
+    color: #3CCF4E;
+}
+.box-intervention p:nth-child(1){
+    font-weight: 600;
+}
+
+/*** Section Commentaire */
+.comment{
+    padding: 60px 300px;
+    background: #F2F4F4;
+    font-size: 20px
+}
+.comment h1{
+    text-align: center;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+}
+.comment h1 span{
+    color: #FF5733;
+}
+.box-comment {
+    display: flex;
+    justify-content: space-between;   
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.box-comment img{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+.box-comment .content-comment ,
+.box-comment .form-comment{
+   width: 90%;
+}
+.box-comment .content-comment h6 i{
+   margin-left: 20px;
+   margin-right: 5px;
+}
+
+.box-comment .content-comment p{
+    text-align: justify;
+    font-size: 18px;
+}
+.box-comment .content-comment div a{
+    text-decoration: none; 
+    margin-right: 20px;
+}
+.box-comment .content-comment div a:nth-child(1){
+    color: #0E21A0;
+}
+.box-comment .content-comment div a:nth-child(2){
+    color: #FF5733;
+}
+.box-comment .form-comment form textarea{
+    padding: 10px;
+    border: 1px solid #FF5733;
+    border-radius: 10px;
+}
+.box-comment .form-comment form textarea:focus{
+    outline: none;
+}
+
+.box-comment .form-comment form button{
+    padding: 10px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    background: #FF5733;
+    color: #F2F4F4;
+    float: right;
+    margin-top: 20px;
+}
+
+/*** Figure **/
+.figure {
+    padding: 60px 100px;
+    font-size: 20px;
+}
+
+.figure h1{
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-bottom: 60px;
+   color: #FF5733;
+   text-align: center;
+}
+.figure p{
+    margin-top: 30px;
+    text-align: justify;
+}
+.figure-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.figure-content figure figcaption{
+    font-size: 16px;
+    font-weight: 500;
+}
+.figure-content a{
+    text-decoration: none;
+    color: #FF5733;
+    cursor: pointer;
+}
+
+
